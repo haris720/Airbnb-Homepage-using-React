@@ -1,0 +1,118 @@
+.container {
+    margin-top: 30px;
+    position: relative; /* For positioning the arrows */
+  }
+  
+  .hr {
+    height: 1px;
+    background-color: #edecec;
+  }
+  
+  .sub-container {
+    display: flex;
+  
+    align-items: center;
+  }
+  
+  .icons-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+    width: 72%;
+  }
+  
+  .icons {
+    /* width: 70%; */
+  
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+  
+  .product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 80px;
+    margin: 10px 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .product.selected span {
+    color: #333; /* Darker font color when selected */
+    font-weight: bold;
+  }
+  
+  .product img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .product span {
+    font-size: 12px;
+    width: 200px;
+    padding-top: 10px;
+    color: #999; /* Light color when not selected */
+  }
+  
+  .arrows {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    top: 0;
+    z-index: 10;
+    width: 30px;
+    background-color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+  }
+  
+  .arrow-left {
+    left: 0;
+  }
+  
+  .arrow-right {
+    right: 0;
+  }
+  
+  .buttons {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    gap: 20px;
+    margin-top: 30px;
+    width: 28%;
+  }
+  
+  .first-btn,
+  .second-btn {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: 1px solid rgb(227, 227, 227);
+    border-radius: 1rem;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 15px;
+  }
+  
+  .first-btn:hover,
+  .second-btn:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .first-btn span,
+  .second-btn span {
+    margin-left: 5px;
+  }
